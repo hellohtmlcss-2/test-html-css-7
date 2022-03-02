@@ -388,7 +388,7 @@ body {
     color: #FFF;
 }
 
-.form-contact-wrp {
+.form-row-wrp {
     display: flex;
     justify-content: space-between;
     margin: 0 0 35px;
@@ -400,6 +400,7 @@ body {
     font-weight: 400;
     line-height: 22px;
     margin: 0 0 15px;
+    color: #FFF;
 }
 
 input {
@@ -463,4 +464,30 @@ textarea {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.popup {
+    background-color: #262626;
+    width: 733px;
+    min-height: 636px;
+    box-sizing: border-box;
+    padding: 55px 95px 69px
+}
+
+.popup .section-sub-title {
+    color: #FFF;
+    text-align: center;
+    margin: 0 0 64px;
+}
+
+.popup .form-row-wrp {
+    margin: 0 0 18px;
+}
+
+.popup textarea {
+    margin: 0 0 34px;
+}
+
+.popup .form-button {
+    margin: 0 auto;
 }

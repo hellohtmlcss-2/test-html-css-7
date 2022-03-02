@@ -97,8 +97,10 @@
                     <h2 class="section-title">О нас</h2>
                     <p class="section-sub-title about-subtitle">Компания <span
                             class="section-sub-title-blue">ИвановПром</span></p>
-                    <p class="about-desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+                    <p class="about-desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                        печатник
                         создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
                         Lorem
                         Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
@@ -153,7 +155,7 @@
                     <h2 class="section-title">Отзывы</h2>
                     <p class="section-sub-title">Ваши благодарности</p>
                 </div>
-            <button class="button review-button" type="button">Оставить отзыв</button>
+                <button class="button review-button" type="button">Оставить отзыв</button>
             </div>
             <ul class="review-list">
                 <li class="review-item">
@@ -173,10 +175,14 @@
             </ul>
             <div class="review-controls">
                 <ul class="flex">
-                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button></li>
-                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button></li>
-                    <li class="review-slider-item-control"><button type="button" class="review-slider-button review-slider-button-active"></button></li>
-                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button></li>
+                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button>
+                    </li>
+                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button>
+                    </li>
+                    <li class="review-slider-item-control"><button type="button"
+                            class="review-slider-button review-slider-button-active"></button></li>
+                    <li class="review-slider-item-control"><button type="button" class="review-slider-button"></button>
+                    </li>
                 </ul>
                 <div class="flex">
                     <button class="review-slider-arrow" type="button" disabled><img src="./img/arrow-left.svg"
@@ -214,7 +220,8 @@
                 <div class="footer-wrp flex">
                     <div class="half-width">
                         <h2 class="footer-subtitle section-sub-title white">Связь с нами</h2>
-                        <p class="footer-questions">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+                        <p class="footer-questions">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
+                        </p>
                         <ul class="flex">
                             <li>
                                 <a class="footer-link" href="tel:81112223344">
@@ -232,7 +239,7 @@
                     </div>
                     <div class="half-width wrp-padding">
                         <form action="#">
-                            <div class="form-contact-wrp">
+                            <div class="form-row-wrp">
                                 <label>
                                     <span class="input-label">Имя</span>
                                     <input type="text" placeholder="Иван">
@@ -257,7 +264,40 @@
             <p class="footer-text">Разработано: BuhOne</p>
         </div>
     </footer>
-    <div>попап</div>
+    <div class="popup">
+        <h2 class="section-sub-title">Оставить отзыв</h2>
+        <form action="">
+            <div class="form-row-wrp">
+                <label>
+                    <span class="input-label">Имя</span>
+                    <input type="text" placeholder="Иван">
+                </label>
+                <label>
+                    <span class="input-label">Фамилия</span>
+                    <input type="text" placeholder="Иванов">
+                </label>
+            </div>
+            <div class="form-row-wrp">
+                <label>
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="Email">
+                </label>
+                <fieldset>
+                    <legend>Все понравилось</legend>
+                    <input type="radio" id="like-yes" name="like" value="yes">
+                    <label for="like-yes">да</label>
+
+                    <input type="radio" id="like-no" name="like" value="no">
+                    <label for="like-no">нет</label>
+                </fieldset>
+            </div>
+            <label>
+                <span class="input-label">Отзыв</span>
+                <textarea placeholder="Отзыв"></textarea>
+            </label>
+            <button class="button form-button" type="submit">Отправить отзыв</button>
+        </form>
+    </div>
 </body>
 
 </html>
